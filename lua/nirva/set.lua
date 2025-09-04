@@ -1,0 +1,12 @@
+-- cursor stuff
+vim.wo.relativenumber = true
+vim.opt.scrolloff = 8
+vim.opt.cursorline = true
+-- tab stuff
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.softtabstop = 4
+vim.opt.smartindent = true
+-- other stuff
+vim.opt.clipboard = "unnamedplus"
