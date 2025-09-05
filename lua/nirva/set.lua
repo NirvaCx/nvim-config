@@ -10,3 +10,7 @@ vim.opt.softtabstop = 4
 vim.opt.smartindent = true
 -- other stuff
 vim.opt.clipboard = "unnamedplus"
+vim.opt.statuscolumn = "%s %{v:relnum?v:relnum:v:lnum} "
+vim.diagnostic.config({
+    signs = false,
+})

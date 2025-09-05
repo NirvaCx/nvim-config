@@ -1,9 +1,16 @@
 vim.g.mapleader = " "
 require("nirva.lazy_init")
 
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme catppuccin")
 require("nirva.set")
 require("nirva.telescope_init")
+require("nirva.lsp")
+
+vim.filetype.add({
+    extension = {
+        hs = 'haskell',
+    },
+})
 
 vim.keymap.set("n", "<leader>i", function()
     vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
@@ -34,5 +41,6 @@ format_on_save.setup({
         typescriptreact = formatters.prettierd,
         yaml = formatters.lsp,
         c = formatters.lsp,
+        haskell = formatters.lsp,
     }
 })
