@@ -1,11 +1,10 @@
 vim.g.mapleader = " "
 require("nirva.lazy_init")
 
-vim.cmd("colorscheme catppuccin")
 require("nirva.set")
 require("nirva.telescope_init")
 require("nirva.lsp")
-
+require("nirva.colorscheme")
 vim.filetype.add({
     extension = {
         hs = 'haskell',

@@ -6,6 +6,7 @@ return {
         "hrsh7th/cmp-path",         -- Path completion source
         "L3MON4D3/LuaSnip",         -- Snippet engine
         "saadparwaiz1/cmp_luasnip", -- LuaSnip completion source for nvim-cmp
+        'hrsh7th/cmp-cmdline',      -- Command line completion source
     },
     config = function()
         local cmp = require("cmp")
