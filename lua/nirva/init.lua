@@ -5,11 +5,9 @@ require("nirva.set")
 require("nirva.telescope_init")
 require("nirva.lsp")
 require("nirva.colorscheme")
-vim.filetype.add({
-    extension = {
-        hs = 'haskell',
-    },
-})
+
+vim.g.loaded_netrw = false
+vim.g.loaded_netrwPlugin = false
 
 vim.keymap.set("n", "<leader>i", function()
     vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
